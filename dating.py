@@ -5,7 +5,7 @@
 
 
 def main():
-    max = 40 
+    max = 40
     min = 25
 
     # Requests the user's age.
@@ -17,18 +17,18 @@ def main():
 
     # Executed if age cannot be converted to int.
     except ValueError:
-        print("You did not enter an integer.")
+        print("You need to enter an integer.")
         main()
-        
+
     # Executed if user_guess is not b/w 25 and 40
     if age_int < min or age_int > max:
         print(f"You can not data my grandchild")
 
     # Executed if the user age is b/w 25 and 40.
-    
-    else: 
+
+    else:
         print("You can date my grandchild")
-    
+
 
 if __name__ == "__main__":
     main()
